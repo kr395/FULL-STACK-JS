@@ -1,5 +1,5 @@
 *{
-    background-color: rgb(56, 56, 56);
+
     padding: 0;
     margin: 0;
 }
@@ -7,3 +7,16 @@
 /* Js Home */
 
 /* Js Intro */
+.jsintro{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+#image{
+    width: 200px;
+    height: 300px;
+    padding: 5px;
+    border-radius: 65%;
+}
