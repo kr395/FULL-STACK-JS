@@ -3,24 +3,39 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* Background Video Style */
 .hero{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(red,black);
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+     width: 100%;
+     height: 100dvh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
 }
-.backvdo{
+.content{
+
+    
+}
+.vdo{
   position: absolute;
-  z-index: -1;
+  top: 0;
   right: 0;
-  bottom: 0;
+  left: 0;
+  z-index: -1;
 }
-h1{
-  color: white;
+
+
+
+@media (min-aspect-ratio: 16/9) {
+  video {
+    width: 100%;
+    height: auto;
+  }
 }
-a{
-    color: white;
+@media (max-aspect-ratio: 16/9) {
+  video {
+    width: auto;
+    height: 100%;
+  }
 }
