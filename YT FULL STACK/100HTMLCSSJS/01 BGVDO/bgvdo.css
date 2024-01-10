@@ -1,23 +1,26 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* Background Video Style */
-.hero{
-     width: 100%;
-     height: 100dvh;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
-.content{
-   font-size: 50px;
-    
+
+.content {
+  font-size: 50px;
+  text-align: center;
+
 }
-.vdo{
+
+.vdo {
   position: absolute;
   top: 0;
   right: 0;
@@ -33,6 +36,7 @@
     height: auto;
   }
 }
+
 @media (max-aspect-ratio: 16/9) {
   video {
     width: auto;
