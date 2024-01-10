@@ -1,0 +1,57 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #555;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.container{
+    position: relative;
+    width:500px;
+    min-height: 700px;
+}
+
+.clip{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(139, 183, 222);
+    transition: all 0.5s
+}
+
+.clip1{
+    background: url(assets/img1.jpg) center;
+    background-size: cover;
+    clip-path: polygon(100% 0, 100% 25%, 0 25%, 0 0);
+}
+
+.clip2{
+    background: url(assets/img2.jpg) center ;
+    background-size: cover;
+    clip-path: polygon(100% 25%, 100% 50%, 0 50%, 0 25%);
+}
+.clip3{
+    background: url(assets/img3.jpg) center ;
+    background-size: cover;
+    clip-path: polygon(100% 50%, 100% 75%, 0 75%, 0 50%);
+}
+.clip4{
+    background: url(assets/img4.jpg) center ;
+    background-size: cover;
+    clip-path: polygon(100% 75%, 100% 100%, 0 100%, 0 75%);
+}
+
+.container .clip:hover{
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    z-index: 1;
+}
+.container:hover .clip{
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+   
+}
