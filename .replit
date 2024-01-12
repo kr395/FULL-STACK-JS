@@ -184,6 +184,3 @@ requiredFiles = [".replit", "replit.nix", ".config"]
 [deployment]
 publicDir = "/"
 deploymentTarget = "static"
-
-language: node
-node_version: 10.3.0  # Replace with the desired version

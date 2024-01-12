@@ -1,6 +1,37 @@
-// Everything About Array
+//Template String ✅
 
-let arr = [1,2,3,4,5,6,7,8,9,10]
+// let dec = "My age is ";
+// let age = 25;
+// let templateString = `${dec}${age} and it's Real`;
+// console.log(templateString); 
 
-// 1. Array Length
-console.log(arr.length)
+// Ternary Operator ✅
+// let age = 5;
+// let drink;
+// Normal If else 
+// if (age >= 5) {
+//     drink = "Drink tea";
+// } else {
+//     drink = "Drink milk";
+// }
+// Using ternary Operator 
+// drink = age >= 5 ? "Drink tea" : "Drink milk";
+
+// console.log(drink);
+
+// Loops ✅
+// do while, for, for in, for of
+
+// do while 
+
+// let i = 1;
+
+// do {
+//     console.log(i);
+//     i++;
+    
+// } while (i <= 5);
+console.log("hi");
+console.log("hi");
+
+
