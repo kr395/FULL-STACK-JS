@@ -31,7 +31,4 @@
 //     i++;
     
 // } while (i <= 5);
-console.log("hi");
-console.log("hi");
-
 
