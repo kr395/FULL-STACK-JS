@@ -79,45 +79,61 @@
 //   console.log(result);
 // }).catch((error)=>console.log(error));
 
-// Promise Practice to change text and color after certain time
+// // Promise Practice to change text and color after certain time
 
-const headings = document.querySelectorAll("h1");
-console.log(headings);
-function change(element, text, color, timeout) {
-  return new Promise((resolve, reject) => {
-    if (element) {
-      setTimeout(() => {
-        element.textContent = text;
-        element.style.color = color;
-        resolve();
-      }, timeout);
-    } else {
-      reject("element not found");
-    }
-  });
-}
+// const headings = document.querySelectorAll("h1");
+// console.log(headings);
+// function change(element, text, color, timeout) {
+//   return new Promise((resolve, reject) => {
+//     if (element) {
+//       setTimeout(() => {
+//         element.textContent = text;
+//         element.style.color = color;
+//         resolve();
+//       }, timeout);
+//     } else {
+//       reject("element not found");
+//     }
+//   });
+// }
 
-change(headings[0], "One", "red", 1000)
-  .then(() => {
-    return change(headings[1], "two", "red", 1000);
-  })
-  .then(() => {
-    return change(headings[2], "three", "red", 1000);
-  })
-  .then(() => {
-    return change(headings[3], "four", "red", 1000);
-  })
-  .then(() => {
-    return change(headings[4], "five", "red", 1000);
-  })
-  .then(() => {
-    return change(headings[5], "six", "red", 1000);
-  })
-  .then(() => {
-    return change(headings[6], "seven", "red", 1000);
-  })
-  .then(() => {
-    return change(headings[7], "eight", "red", 1000);
-  }).catch((err) => {
-    console.log(err);
-  });
+// change(headings[0], "One", "red", 1000)
+//   .then(() => {
+//     return change(headings[1], "two", "red", 1000);
+//   })
+//   .then(() => {
+//     return change(headings[2], "three", "red", 1000);
+//   })
+//   .then(() => {
+//     return change(headings[3], "four", "red", 1000);
+//   })
+//   .then(() => {
+//     return change(headings[4], "five", "red", 1000);
+//   })
+//   .then(() => {
+//     return change(headings[5], "six", "red", 1000);
+//   })
+//   .then(() => {
+//     return change(headings[6], "seven", "red", 1000);
+//   })
+//   .then(() => {
+//     return change(headings[7], "eight", "red", 1000);
+//   }).catch((err) => {
+//     console.log(err);
+//   });
+
+
+// Ajax
+
+const URL = "https://jsonplaceholder.typicode.com/posts"
+
+const xhr = new XMLHttpRequest(); 
+xhr.open("GET", URL);
+xhr.onreadystatechange = () => {
+     
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          const data = JSON.parse(xhr.responseText);  
+          console.log(data);  
+          }
+};
+xhr.send();
