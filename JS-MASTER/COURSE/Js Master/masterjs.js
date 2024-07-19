@@ -2,6 +2,7 @@
 // console.log("hello world");
 // "use strict"; //it helps to avoid error
 // intro to variables
+// console.table() 
 
 // variables can store some information
 // we can use that information later
